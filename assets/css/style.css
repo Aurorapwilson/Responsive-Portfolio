@@ -1,0 +1,253 @@
+body{
+        background: url(../images/little_triangles.png);
+        display: flex;
+        flex-direction: column;
+    }
+    .flexcontainer{
+        margin: 0 auto;
+        width: 60%;
+        /* background-color: #ffffff; */
+        border-color: #dddddd;
+        flex: 1 0 auto;
+    }
+        
+    
+    
+    nav{
+           /* height: 35px; */
+           width: 100%;
+           /* border-bottom: #cccccc; */
+           border: #ccc solid;
+           border-width: 0 0 1px 0;
+           display: flex;
+           justify-content: space-between;
+           background: #fff;
+           margin-bottom: 20px;
+    }
+     h1{
+        width: 18%;
+        /* height: 50px; */
+        font-size: 1.5rem;
+        bottom: 0;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        padding-left: 18px;
+        background-color: #4aaaa5;
+        color: #fff;
+    }
+    ul{
+             /* float: right; */
+        /* display: flex; */
+        /* background-color: #ffccff; */
+        width: 29.3%;
+        /* height: 50px; */
+        /* font-size: 1.5rem; */
+        bottom: 0;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        padding-left: 18px;
+        display: flex;
+        justify-content: space-between;
+        color: #777;
+    
+    }
+    li{
+        display: block;
+        color: #777;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li.firstitem{
+        flex-direction: row;
+        border-right: 1px solid #bbb;
+     
+    }
+    li.seconditem{
+        flex-direction: row;
+        border-right: 1px solid #bbb;
+    
+      
+    }
+    li.thirditem{
+        flex-direction: row;
+        border: none;
+       
+    }
+    
+    
+    /*.flex-container {
+      display: flex;*/
+    div {
+        display: block;
+    }
+    
+    img {
+        width: 22%;
+        height: auto;
+        float: left;
+        margin: 10px;
+    }
+    .about{
+        flex-wrap: wrap;
+        background-color: #fff;
+        position: relative;
+        color: #777;
+        
+    }
+    
+    h2{    
+            /* height: 50px; */
+            font-size: 1.5rem;
+            bottom: 0;
+            padding-top: 25px;
+            padding-bottom: 10px;
+            padding-left: 18px;
+            color: #4aaaa5;
+    }
+    p{
+        padding: 10px;
+    }
+    footer{
+              /* clear: both; */
+        align-items: center;
+        position: bottom;
+        display: flex;
+        justify-content: center;
+        background: #666;
+        /* position: fixed; */
+        width: 100%;
+        height: 50px;
+        /* margin-top: -50px; */
+        /* clear: both; */
+        border-top: 5px solid #4aaaa5;
+        /* flex: 1 0 auto; */
+        flex-shrink: 0;
+    }
+    
+    html, body {
+        height: 100%;
+      }
+      /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */  
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #4aaaa5;
+    }
+    
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #4aaaa5;
+    }
+    
+    /* Add a background color and some padding around the form */
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    #contactlabel{
+       
+        color: #4aaaa5;
+        background-color: #fff;
+    }
+    form{
+        background: #fff;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        width: 50%;
+      }
+      .grid-item {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        grid-column-start: auto;
+        grid-column-end: auto;
+        
+      }
+    
+      nav ul {
+        justify-content: flex-end;
+    }
+    
+    form label, form input {
+        padding: 20px;
+    }
+    
+      /* Media queries */
+      /* 640px, 768px, 980px */
+    
+      
+      @media screen and (max-width: 980px) {
+        img {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    
+    
+        nav h1 {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
+    
+        nav {
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        nav ul {
+            justify-content: center;
+        }
+    
+        .grid-container {
+            display: block;
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+        img {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    
+        .about h2 {
+            width: 100%;
+        }
+      }
+    
+    
+    
+    @media screen and (max-width: 640px) {
+        .about {
+            padding: 0;
+        }
+    
+        img {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+      }
